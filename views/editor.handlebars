@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Edit Post</h1>
+
+  <input id="title-form" class="form-control form-control-lg g-3" value="{{post.title}}" placeholder="Title">
+  <textarea id="content-form" class="form-control form-control-sm mt-3" style="resize: none" placeholder="Content">{{post.content}}</textarea>
+  <button id="edit-button" class="btn btn-primary mt-3">Edit</button>
+  <button id="delete-button" class="btn btn-danger mt-3">Delete</button>
+</div>
+
+<script> const postId = {{post.id}} </script>
+<script src="/js/editor.js"></script>
